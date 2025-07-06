@@ -1,18 +1,14 @@
-Write a script that inserts a single row in the table customer (database alx_book_store) in your MySQL server.
+USE alx_book_store;
 
-Singel data insertion
-
-customer_id = 1
-customer_name = Cole Baidoo
-email = cbaidoo@sandtech.com
-address = 123 Happiness Ave.
-The database name will be passed as an argument of the mysql command
-
-Name of the file should be task_5.sql
-
-All SQL keywords should be in uppercase
-
-Repo:
-
-GitHub repository: Intro_to_DB
-File: task_5.sql
+SELECT 
+    COLUMN_NAME,
+    COLUMN_TYPE,
+    IS_NULLABLE,
+    COLUMN_KEY,
+    COLUMN_DEFAULT,
+    EXTRA
+FROM 
+    INFORMATION_SCHEMA.COLUMNS
+WHERE 
+    TABLE_SCHEMA = 'alx_book_store'
+    AND TABLE_NAME = 'Books';
