@@ -1,14 +1,7 @@
 USE alx_book_store;
 
-SELECT 
-    COLUMN_NAME,
-    COLUMN_TYPE,
-    IS_NULLABLE,
-    COLUMN_KEY,
-    COLUMN_DEFAULT,
-    EXTRA
-FROM 
-    INFORMATION_SCHEMA.COLUMNS
-WHERE 
-    TABLE_SCHEMA = 'alx_book_store'
-    AND TABLE_NAME = 'Books';
+INSERT INTO customer (customer_id, customer_name, email, address)
+VALUES
+    (1, 'Jane Doe', 'jane.doe@example.com', '123 Palm Street, Nairobi'),
+    (2, 'John Smith', 'john.smith@example.com', '456 River Road, Eldoret'),
+    (3, 'Alice Kiptoo', 'alice.kiptoo@example.com', '789 Mountain View, Kericho');
