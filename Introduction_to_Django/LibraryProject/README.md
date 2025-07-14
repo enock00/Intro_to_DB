@@ -1,3 +1,1 @@
-# LibraryProject
-
 This is a basic Django setup called **LibraryProject**. It serves as the starting point for learning Django development.
